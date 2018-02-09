@@ -115,11 +115,7 @@ function resetWord() {
     document.getElementById("letters").innerHTML = guessedLetters;
 }
 
-// function arrayIntoString(hang) {
-//     for (i = 0; i < hangman.length) {
-//         hiddenWord
-//     }
-// }
+
 
 function winLose() {
     if (hiddenWord === mysteryWord) {
@@ -140,13 +136,9 @@ function winLose() {
 }
 
 // Accept user inputs
-var test = "test again";
-console.log(test.length);
-
 document.onkeyup = function (event) {
     document.getElementById("wins").innerHTML = winCount;
     document.getElementById("losses").innerHTML = lossCount;
-    // Get a new hidden word if needed
     userGuess = String.fromCharCode(event.which).toUpperCase();
     if (newWord === true) {
         resetWord();
