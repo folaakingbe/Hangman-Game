@@ -1,0 +1,40 @@
+body {
+    background: url('../images/728240.png');
+    background-size: 1350px 700px;
+    color: red;
+}
+
+#logo {
+    height: 30%;
+    width: 30%;
+    position: relative;
+    left: 450px;
+}
+
+#title1, #title2 {
+    font-size: 75px;
+}
+
+#title1 {
+    position: relative;
+    bottom: 100px;
+    left: 60px;
+}
+
+#title2 {
+    position: relative;
+    bottom: 175px;
+    left: 900px;
+}
+
+#game {
+    font-size: 40px;
+    position: relative;
+    bottom: 150px;
+    left: 40px;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+}
