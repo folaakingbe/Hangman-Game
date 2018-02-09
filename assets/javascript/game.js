@@ -30,7 +30,8 @@ var hiddenWord = "";
 // Word as it is being solved in array form
 var hangman = [];
 // Number of Guesses
-var guessesLeft = 12;
+var maxGuesses = 12;
+var guessesLeft = maxGuesses;
 // Letters of the alphabet
 var alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 // User input
@@ -107,7 +108,7 @@ function resetWord() {
     winOrLose = "";
     document.getElementById("result").innerHTML = winOrLose;
     hangman = [];
-    guessesLeft = 12;
+    guessesLeft = maxGuesses;
     mysteryWord = getNewWord();
     hideWord(mysteryWord);
     document.getElementById("hidden").innerHTML = hangman.join(" ");
